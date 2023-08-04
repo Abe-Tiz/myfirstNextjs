@@ -10,6 +10,9 @@ const Header = () => {
             <div className='logo'>
                 <Link href='/' ><FaGithub /></Link>  
             </div>
+            {/* <div className='logo'>
+                <Link href='/' >My Github Repositories</Link>  
+            </div> */}
             <div className='links'>
                 <Link href='/about'>About</Link>
                 <Link href='/about/contact'>Contact</Link>

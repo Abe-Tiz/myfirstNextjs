@@ -20,8 +20,8 @@ async function fetchContent(name) {
 const RepoDirs = async ({name}) => {
 
     const contents = await fetchContent(name);
-
     const dirs = contents.filter((content) => content.type=== 'dir')
+    
   return (
     <>
         <h1>Directories</h1>
