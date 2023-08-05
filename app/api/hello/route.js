@@ -1,7 +1,3 @@
-import React from 'react'
-
-const Get = async (request) => {
-  return new Response('success')
+export async function GET(request){
+  return new Response('hello, next js!')
 }
-
-export default route
