@@ -6,8 +6,7 @@ const page = () => {
   return (
     <> 
     
-    {/* <h1>Home page</h1> */}
-     <Course />
+      <Course />
     </>
     
   )
