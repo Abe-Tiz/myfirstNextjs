@@ -6,15 +6,15 @@ async function fetchContent(name) {
     await new Promise(resolv =>setTimeout(resolv,3000));
 
     const respons = await fetch(`https://api.github.com/repos/Abe-Tiz/${name}/contents`,
-                    {
-                        //validate after 1 minu new repositories add 
-                        next:{
-                            revalidate:60
-                        }
-                    })
-                     const res =  respons.json();
-                    return res
-                }
+        {
+            //validate after 1 minu new repositories add 
+            next:{
+                revalidate:60
+            }
+        })
+            const res =  respons.json();
+        return res
+    }
 
 
 const RepoDirs = async ({name}) => {

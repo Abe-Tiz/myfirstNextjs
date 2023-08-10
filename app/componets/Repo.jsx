@@ -3,20 +3,19 @@ import{FaStar,FaCodeBranch,FaEye} from 'react-icons/fa'
 
 
 async function fetchData(name) {
-    const respons = await fetch(`https://api.github.com/repos/Abe-Tiz/${name}`,
-                    {
-                        next:{
-                            revalidate:60
-                        }
-                    })
+    const respons = await fetch(`https://api.github.com/repos/Abe-Tiz/${name}`, {
+        next:{
+            revalidate:60
+        }
+    })
 
-                    if (!respons.ok) {
-                    throw new Error('Failed to fetch data')
-                    }
+    if (!respons.ok) {
+    throw new Error('Failed to fetch data')
+    }
 
-                    const res =  respons.json();
-                    return res
-                }
+    const res =  respons.json();
+    return res
+}
 
 const Repo =async ({name}) => {
 
